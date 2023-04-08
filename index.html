@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<p class="title">Rock Paper Scissors</p>
+<body>
+  <button class="move-button" onclick="
+    playGame('rock');
+    "><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
+  <button class="move-button" onclick="
+    playGame('paper');
+  "><i class="fas fa-hand-paper-o" aria-hidden="true"></i></button>
+  <button class="move-button" onclick="
+    playGame('scissors');
+  "><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
+  <p class="js-result"></p>
+  <p class="js-move">
+   
+  </p>
+  <p class="js-class"></p>
+
+  <button class="reset-button" onclick="
+    score.wins = 0;
+    score.ties = 0;
+    score.losses = 0;
+    localStorage.removeItem('score');
+    upDateScoreElement();
+  ">Reset Score</button>
+  <script src="./script.js"></script>
+</body>
+</html>
