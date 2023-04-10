@@ -70,8 +70,8 @@
 
         document.querySelector('.js-result').innerHTML = result;
         document.querySelector('.js-move').innerHTML = ` You
-    <i class="fa fa-hand-${playerMove}-o" aria-hidden="true"></i>
-    <i class="fa fa-hand-${computerMove}-o" aria-hidden="true"></i>
+        <img src="${playerMove}-emoji.png" class="fa" />
+         <img src="${computerMove}-emoji.png" class="fa" />
     Computer`;
      
      
